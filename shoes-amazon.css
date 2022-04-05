@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: top;
+  width: 320px;
+  padding: 50px;
+
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+/* .container {
+  position: relative;
+  display: block;
+} */
+
+
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+.topofthepage{
+  border: 10px solid black;
+  padding: 10px;
+  background-color: DarkSlateGray;
+
+}
+h1{
+  text-align: center;
+}
+.checked {
+  color: orange;
+}
+.centerpage{
+  width: 320px;
+  padding: 10px;
+  text-align: center;
+  height: 100%;
+}
+.ratings{
+ color: rgb(100, 149, 237);
+ border-style: ridge;
+}
+.price{
+  border-style: ridge;
+}
+.leftpage{
+  width: 320px;
+  padding: 10px;
+  text-align: auto;
+  display: block;
+
+}
+.col-container {
+  display: table;
+  width: 100%;
+  border: 10px solid black;
+
+}
+.col {
+  display: table-cell;
+  padding: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  .col {
+    display: block;
+    width: 100%;
+  }
+}
+.column2 {
+  width: 300px;
+  height: 50px;
+  padding: 50px;
+
+}
+
+/* Style the images inside the grid */
+.column2 img {
+  opacity: 0.8;
+  cursor: pointer;
+  display:table-column-group	;
+
+
+}
+
+.column2 img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row2:after {
+  content: "";
+  display: table-row;
+  clear: both;
+}
+.addtolist{
+border-style: inset;
+}
