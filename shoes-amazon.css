@@ -1,11 +1,10 @@
 * {
   box-sizing: border-box;
   text-decoration: none;
-
 }
+
 body {
   font-family: Arial;
-
 }
 
 /* The grid: Four equal columns that floats next to each other */
@@ -15,17 +14,12 @@ body {
   padding: 50px;
   border: 1px;
   margin: 1px;
-
-
-
 }
 
 /* Style the images inside the grid */
 .column img {
   opacity: 0.8;
   cursor: pointer;
-
-
 }
 
 .column img:hover {
@@ -45,41 +39,41 @@ body {
   display: flex;
   width: 336px;
   height: inherit;
-
+  justify-content: center;
 }
-
-
 
 /* Closable button inside the expanded image */
-
-
-.topofthepage{
+.topofthepage {
   border: 5px solid black;
   background-color: DarkSlateGray;
+  display: flex;
+}
 
-}
-h1{
-  text-align: center;
-}
+
+
 .checked {
   color: orange;
 }
+
 /* .centerpage{
   width: 320px;
   padding: 10px;
   text-align: center;
   height: 100%;
 } */
-.ratings{
- color: rgb(100, 149, 237);
+.ratings {
+  color: rgb(100, 149, 237);
   border-bottom: 2px solid gray;
   display: block;
+  padding: 10px;
 }
-.price{
+
+.price {
   border-bottom: 2px solid gray;
   display: block;
   /* border-style: ridge; */
 }
+
 /* .leftpage{
   width: 320px;
   padding: 10px;
@@ -90,20 +84,30 @@ h1{
 .col-container {
   display: flex;
   border: 2px solid black;
-  justify-content: space-evenly;
-
+  justify-content: center;
 }
+
 .col1 {
   display: flex;
   padding: 16px;
 }
+
 .col2 {
   display: flex;
   padding: 16px;
 }
+
 .col3 {
   display: flex;
   padding: 16px;
+height: 100%;
+
+}
+.col4 {
+  width: 300px;
+  text-align: right;
+  padding: 10px;
+
 
 }
 
@@ -113,20 +117,18 @@ h1{
     width: 100%;
   }
 }
+
 .column2 {
   width: 300px;
   height: 50px;
   padding: 50px;
-
 }
 
 /* Style the images inside the grid */
 .column2 img {
   opacity: 0.8;
   cursor: pointer;
-  display:table-column-group	;
-
-
+  display: table-column-group;
 }
 
 .column2 img:hover {
@@ -139,4 +141,22 @@ h1{
   display: table-row;
   clear: both;
 }
-/*
+
+.addtolist{
+
+  border-bottom: 1px solid gray;
+
+
+}
+.rightpage{
+  border: 1px solid gray;
+  padding: 10px;
+}
+.button{
+  padding: 15px 32px;
+  border: none;
+  cursor: pointer;
+ display: inline-block;
+ border-radius: 20%;
+
+}
