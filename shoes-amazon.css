@@ -1,5 +1,6 @@
 body {
   font-family: Arial;
+  text-decoration: none;
 }
 
 a:hover {
@@ -70,7 +71,7 @@ a:hover {
 .ratings {
   color: rgb(100, 149, 237);
   border-bottom: 2px solid gray;
-  display: flex:inline;
+  display: block;
   padding: 10px;
   text-decoration: none;
 }
