@@ -1,6 +1,6 @@
 body {
   font-family: Arial;
-  text-decoration: none;
+  text-decoration: none!important;
 }
 
 a:hover {
@@ -8,11 +8,12 @@ a:hover {
 }
 
 .column {
-  width: 320px;
-  height: 160px;
-  padding: 50px;
+  width: 32px;
+  height: 16px;
+  padding: 30px;
   border: 1px;
   margin: 1px;
+  object-fit: cover;
 }
 
 /* Style the images inside the grid */
@@ -30,17 +31,25 @@ a:hover {
   content: "";
   display: flex;
   clear: both;
+  object-fit: cover;
 }
 
 /* The expanding image container */
 .container {
   position: relative;
+  bottom: -300px;
   display: flex;
   width: 336px;
   height: inherit;
-  justify-content: center;
-}
+  justify-content: bottom;
+  object-fit: cover;
 
+}
+.container:hover{
+  -ms-transform: scale(2); /* IE 9 */
+  -webkit-transform: scale(2); /* Safari 3-8 */
+  transform: scale(2);
+}
 /* Closable button inside the expanded image */
 .topofthepage {
   align-items: flex-end;
@@ -94,6 +103,7 @@ a:hover {
 
 .col1 {
   display: flex;
+  
   padding: 16px;
 }
 
@@ -112,7 +122,8 @@ a:hover {
 
 .col4 {
   width: 300px;
-  text-align: center;
+  height: 300px;
+  text-align: bottom;
 }
 
 @media only screen and (max-width: 600px) {
@@ -182,6 +193,9 @@ a:hover {
   display: inline-block;
   border-radius: 20%;
 }
+.button:hover{
+cursor:not-allowed;
+}
 
 .navigation {
   display: flex;
@@ -245,4 +259,10 @@ a:hover {
 
 .pricet {
   font-size: 30px;
+}
+.BP-head2{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 50px;
 }
