@@ -1,13 +1,11 @@
-* {
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
 body {
   font-family: Arial;
 }
 
-/* The grid: Four equal columns that floats next to each other */
+a:hover {
+  text-decoration: none;
+}
+
 .column {
   width: 320px;
   height: 160px;
@@ -44,12 +42,20 @@ body {
 
 /* Closable button inside the expanded image */
 .topofthepage {
-  border: 5px solid black;
+  align-items: flex-end;
   background-color: DarkSlateGray;
   display: flex;
 }
 
+.logo {
+  display: flex;
+}
 
+.search {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
 
 .checked {
   color: orange;
@@ -64,18 +70,17 @@ body {
 .ratings {
   color: rgb(100, 149, 237);
   border-bottom: 2px solid gray;
-  display: block;
+  display: flex:inline;
   padding: 10px;
+  text-decoration: none;
 }
 
 .price {
   border-bottom: 2px solid gray;
-  display: block;
-  /* border-style: ridge; */
 }
 
 /* .leftpage{
-  width: 320px;
+  width: 300px;
   padding: 10px;
   text-align: auto;
   display: block;
@@ -83,8 +88,7 @@ body {
 } */
 .col-container {
   display: flex;
-  border: 2px solid black;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .col1 {
@@ -100,15 +104,14 @@ body {
 .col3 {
   display: flex;
   padding: 16px;
-height: 100%;
-
+  height: 100%;
+  justify-content: space-between;
+  /* justify-content:flex-end; */
 }
+
 .col4 {
   width: 300px;
-  text-align: right;
-  padding: 10px;
-
-
+  text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
@@ -128,7 +131,8 @@ height: 100%;
 .column2 img {
   opacity: 0.8;
   cursor: pointer;
-  display: table-column-group;
+  display: flex;
+  align-items: flex-end;
 }
 
 .column2 img:hover {
@@ -136,27 +140,108 @@ height: 100%;
 }
 
 /* Clear floats after the columns */
-.row2:after {
+/* .row2:after {
   content: "";
   display: table-row;
   clear: both;
-}
-
-.addtolist{
-
+} */
+/* .addtolist {
   border-bottom: 1px solid gray;
-
-
-}
-.rightpage{
-  border: 1px solid gray;
   padding: 10px;
+} */
+.rightpage {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  justify-content: space-between;
 }
-.button{
+
+.box1 {
+  border: 1px solid gray;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.box2 {
+  border: 1px solid gray;
+  justify-content: space-between;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+}
+
+.button {
   padding: 15px 32px;
   border: none;
   cursor: pointer;
- display: inline-block;
- border-radius: 20%;
+  display: inline-block;
+  border-radius: 20%;
+}
 
+.navigation {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  background: SlateGrey;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: white;
+}
+
+.navigation a:hover {
+  background: #1565C0;
+}
+
+@media all and (max-width: 800px) {
+  .navigation {
+    justify-content: space-around;
+  }
+}
+
+@media all and (max-width: 600px) {
+  .navigation {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .navigation a {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .navigation li:last-of-type a {
+    border-bottom: none;
+  }
+}
+
+.bottompage {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  margin: 50px;
+  border-bottom: 1px solid gray;
+}
+
+.BP-head {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 50px;
+  border-top: 1px solid gray;
+}
+
+.pricet {
+  font-size: 30px;
 }
