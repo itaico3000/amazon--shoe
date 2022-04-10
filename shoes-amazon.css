@@ -18,13 +18,17 @@ a:hover {
 
 /* Style the images inside the grid */
 .column img {
-  opacity: 0.8;
   cursor: pointer;
 }
-
-.column img:hover {
-  opacity: 1;
+.img-box{
+  border:1px solid gray;
+  padding: 1px;
 }
+.img-box:hover{
+  border:1px solid orange;
+}
+
+
 
 /* Clear floats after the columns */
 .row:after {
@@ -141,7 +145,6 @@ a:hover {
 
 /* Style the images inside the grid */
 .column2 img {
-  opacity: 0.8;
   cursor: pointer;
   display: flex;
   align-items: flex-end;
@@ -217,11 +220,11 @@ cursor:not-allowed;
   background: #1565C0;
 }
 
-@media all and (max-width: 800px) {
+/* @media all and (max-width: 800px) {
   .navigation {
     justify-content: space-around;
-  }
-}
+  } */
+
 
 @media all and (max-width: 600px) {
   .navigation {
@@ -268,7 +271,7 @@ cursor:not-allowed;
   margin: 50px;
 }
 .BP-head3{
-  border-top: 1px solid gray;
+  border-top: 1px solid rgb(18, 17, 17);
   display: flex;
   align-items: center;
   justify-content: space-between;
